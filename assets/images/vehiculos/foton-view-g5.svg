@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#202631"/><stop offset="1" stop-color="#090b10"/></linearGradient></defs>
+<rect width="1200" height="760" fill="url(#g)"/>
+<path d="M260 510 C360 360 500 330 620 330 C760 330 870 390 950 510 L890 570 H300Z" fill="#141922" stroke="#69727d" stroke-width="6"/>
+<circle cx="410" cy="560" r="68" fill="#080a0f" stroke="#9aa1aa" stroke-width="8"/><circle cx="810" cy="560" r="68" fill="#080a0f" stroke="#9aa1aa" stroke-width="8"/>
+<path d="M455 365 L535 285 H695 L775 365Z" fill="#0b0e13" stroke="#69727d" stroke-width="5"/>
+<text x="600" y="135" text-anchor="middle" fill="#d8aa28" font-family="Arial" font-size="28" font-weight="700">FOTON</text>
+<text x="600" y="175" text-anchor="middle" fill="#fff" font-family="Arial" font-size="22">VIEW G5</text>
+<text x="600" y="215" text-anchor="middle" fill="#9ca3ad" font-family="Arial" font-size="15">REEMPLAZAR POR FOTO REAL</text>
+</svg>

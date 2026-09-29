@@ -1,0 +1,24 @@
+{
+  "id": "/",
+  "name": "Autosale Motors",
+  "short_name": "Autosale",
+  "description": "Catálogo de minibuses, vagonetas, camiones y seminuevos de Autosale Motors.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "es-BO",
+  "background_color": "#080a0f",
+  "theme_color": "#080a0f",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ficha de vehículo | Autosale Motors</title>
+  <meta name="description" content="Ficha de vehículo de Autosale Motors.">
+  <link rel="icon" href="assets/images/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="Autosale Motors | Ficha de vehículo">
+  <meta property="og:description" content="Consulta disponibilidad y condiciones directamente por WhatsApp.">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header js-header">
+    <div class="u-container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Autosale Motors - Inicio"><img class="brand__image" src="assets/images/logo.png" alt="Autosale Motors"></a>
+      <button class="site-header__menu-button js-menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <nav class="site-nav js-nav" id="site-nav" aria-label="Navegación principal">
+        <a class="site-nav__link js-nav-link" href="index.html">Inicio</a>
+        <a class="site-nav__link js-nav-link" href="index.html#vehiculos">Vehículos</a>
+        <a class="site-nav__link js-nav-link" href="index.html#respaldo">Compra con respaldo</a>
+        <a class="site-nav__link js-nav-link" href="index.html#financiamiento">Financiamiento</a>
+        <a class="site-nav__link js-nav-link" href="index.html#contacto">Contacto</a>
+      </nav>
+      <a class="button button--primary site-header__contact js-whatsapp" href="#"><span>Consultar</span><svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .25 5.3.25 11.82c0 2.08.54 4.1 1.57 5.88L.16 24l6.43-1.68a11.78 11.78 0 0 0 5.49 1.36h.01c6.51 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.13-3.39-8.38Zm-8.44 18.17h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.82 1 1.02-3.72-.24-.38a9.82 9.82 0 1 1 8.4 4.67Zm5.39-7.37c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.93 1.14-.17.19-.34.22-.63.07-.29-.15-1.21-.45-2.3-1.42-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.16-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.49.07-.75.37-.26.29-.98.96-.98 2.35s1 2.72 1.14 2.91c.14.19 1.97 3.01 4.77 4.22.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.72-.7 1.96-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg></a>
+    </div>
+  </header>
+
+  <main class="detail">
+    <div class="u-container">
+      <a class="back-link" href="index.html#vehiculos">← Volver al catálogo</a>
+      <div class="detail-grid">
+        <!-- Galería: las imágenes se controlan desde data/vehicles.js -->
+        <section class="detail-gallery" aria-label="Galería del vehículo">
+          <div class="detail-main-image"><img class="detail-main-image__image js-detail-image" alt=""></div>
+          <div class="detail-thumbs js-detail-thumbs" aria-label="Galería de imágenes"></div>
+          <div class="detail-video js-detail-video" hidden></div>
+          <p class="detail-gallery__note js-gallery-note">La galería y el video se mostrarán cuando se carguen los recursos reales de esta unidad.</p>
+        </section>
+
+        <!-- Información: se rellena automáticamente desde data/vehicles.js -->
+        <section class="detail-copy">
+          <p class="eyebrow js-detail-class"></p>
+          <h1 class="detail-copy__title js-detail-title"></h1>
+          <div class="detail-tags js-detail-tags"></div>
+
+          <div class="spec-box">
+            <h2 class="spec-box__title">Especificaciones disponibles</h2>
+            <div class="detail-specs-grid js-detail-specs"></div>
+            <p class="detail-note"></p>
+          </div>
+
+          <div class="detail-support">
+            <h2 class="detail-support__title">Compra con respaldo</h2>
+            <p>Documentación, inspección mecánica y eléctrica, GNV y garantía según las condiciones informadas por Autosale.</p>
+            <ul class="detail-support__list"><li>RUAT público, placas y SOAT</li><li>Póliza de importación y resolución de tránsito</li><li>Informe técnico de DIPROVE y B-SISA</li><li>2 años o 100.000 km en motor, caja y diferencial/corona</li></ul>
+          </div>
+
+          <a class="button button--primary button--large js-vehicle-whatsapp" href="#"><span>Consultar con un asesor</span><svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .25 5.3.25 11.82c0 2.08.54 4.1 1.57 5.88L.16 24l6.43-1.68a11.78 11.78 0 0 0 5.49 1.36h.01c6.51 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.13-3.39-8.38Zm-8.44 18.17h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.82 1 1.02-3.72-.24-.38a9.82 9.82 0 1 1 8.4 4.67Zm5.39-7.37c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.93 1.14-.17.19-.34.22-.63.07-.29-.15-1.21-.45-2.3-1.42-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.16-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.49.07-.75.37-.26.29-.98.96-.98 2.35s1 2.72 1.14 2.91c.14.19 1.97 3.01 4.77 4.22.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.72-.7 1.96-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg></a>
+          <p class="detail-note"></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="u-container site-footer__inner"><img class="site-footer__logo" src="assets/images/logo.png" alt="Autosale Motors"><span>© <span id="year"></span> Autosale Motors</span><a href="index.html">Volver al inicio</a></div></footer>
+
+  <script src="js/config.js"></script>
+  <script src="data/vehicles.js"></script>
+  <script src="js/modules/whatsapp.js"></script>
+  <script src="js/modules/navigation.js"></script>
+  <script src="js/modules/header.js"></script>
+  <script src="js/modules/seo.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EDITAR ANTES DE PUBLICAR: reemplaza por el dominio real del sitio.
+Sitemap: https://EDITAR-TU-DOMINIO.com/sitemap.xml

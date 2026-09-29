@@ -1,0 +1,34 @@
+/* =========================================================
+   AUTOSALE MOTORS · BOTONES
+   Modificadores BEM: .button--primary, --ghost, --secondary, --large.
+   ========================================================= */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-weight: 850;
+  cursor: pointer;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.button:hover { transform: translateY(-2px); }
+.button--primary {
+  color: var(--color-white);
+  background: var(--color-accent);
+  box-shadow: 0 10px 26px rgba(239,51,64,.18);
+}
+.button--primary:hover {
+  background: var(--color-accent-light);
+  box-shadow: 0 14px 32px rgba(239,51,64,.28);
+}
+.button--ghost { border-color: #3c4653; color: var(--color-white); background: rgba(255,255,255,.02); }
+.button--ghost:hover { border-color: #5c6877; background: rgba(255,255,255,.06); }
+.button--secondary { border-color: #394451; color: var(--color-white); background: #151b24; }
+.button--secondary:hover { border-color: #596677; background: #1b222d; }
+.button--large { min-height: 50px; padding: 15px 22px; }
+
+.icon-whatsapp { width: 18px; height: 18px; flex: 0 0 auto; fill: var(--color-success); }
