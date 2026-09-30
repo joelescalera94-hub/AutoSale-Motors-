@@ -1,0 +1,17 @@
+/* =========================================================
+   AUTOSALE MOTORS · UTILIDADES Y ANIMACIONES
+   ========================================================= */
+.text-link { color: #e2e6eb; font-weight: 850; text-decoration: underline; text-decoration-color: #566170; text-underline-offset: 4px; transition: color .2s ease; }
+.text-link:hover { color: var(--color-white); text-decoration-color: var(--color-accent); }
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal--left { transform: translateX(-24px); }
+.reveal--right { transform: translateX(24px); }
+.reveal--left.is-visible,
+.reveal--right.is-visible { transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__visual { animation: none; }
+  .reveal,.reveal.is-visible { opacity: 1; transform: none; }
+}

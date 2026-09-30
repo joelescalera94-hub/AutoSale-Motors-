@@ -1,0 +1,85 @@
+/* =========================================================
+   AUTOSALE MOTORS · HERO
+   Bloque BEM: .hero.
+   ========================================================= */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 76px 0 86px;
+  color: var(--color-white);
+  background: linear-gradient(135deg,#07090d 0%,#0b0f15 55%,#100e12 100%);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -230px;
+  right: -180px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle,rgba(239,51,64,.18),transparent 67%);
+  filter: blur(6px);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg,transparent,rgba(239,51,64,.55),transparent);
+}
+.hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr .92fr;
+  align-items: center;
+  gap: 70px;
+}
+.hero__eyebrow,
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--color-accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .2em;
+}
+.hero__title {
+  max-width: 760px;
+  margin: 0 0 22px;
+  font-size: clamp(42px,5.2vw,72px);
+  line-height: 1.02;
+  letter-spacing: -.05em;
+}
+.hero__title span { color: var(--color-accent); }
+.hero__text { max-width: 650px; color: #aeb6c2; font-size: 18px; }
+.hero__actions { display: flex; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
+.hero__visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a3340;
+  border-radius: 28px;
+  background: linear-gradient(145deg,#111720,#090c11);
+  box-shadow: var(--shadow);
+  animation: hero-float 6s ease-in-out infinite;
+}
+.hero__visual::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: 0;
+  left: 8%;
+  height: 38%;
+  pointer-events: none;
+  background: radial-gradient(ellipse,rgba(239,51,64,.22),transparent 70%);
+}
+.hero__image {
+  width: 100%;
+  aspect-ratio: 1.35;
+  object-fit: cover;
+  filter: saturate(.9);
+  transition: transform .8s var(--transition-smooth);
+}
+.hero__visual:hover .hero__image { transform: scale(1.035); }
+@keyframes hero-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }

@@ -1,0 +1,68 @@
+/* =========================================================
+   AUTOSALE MOTORS · HEADER / NAVEGACIÓN
+   Bloques BEM: .site-header, .site-nav, .brand.
+   ========================================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7,9,13,.78);
+  backdrop-filter: blur(18px) saturate(1.2);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  transition: background var(--transition), box-shadow var(--transition);
+}
+.site-header.is-scrolled {
+  background: rgba(7,9,13,.94);
+  box-shadow: 0 12px 35px rgba(0,0,0,.25);
+}
+.site-header__inner {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.brand { display: flex; align-items: center; }
+.brand__image { width: 148px; max-height: 52px; object-fit: contain; }
+.site-nav { display: flex; gap: 24px; margin-left: auto; }
+.site-nav__link {
+  position: relative;
+  padding: 8px 0;
+  color: #c8ced8;
+  font-size: 13px;
+  font-weight: 700;
+}
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 1px;
+  height: 2px;
+  background: var(--color-accent);
+  transition: right .25s ease;
+}
+.site-nav__link:hover { color: var(--color-white); }
+.site-nav__link:hover::after { right: 0; }
+.site-nav__link--active { color: var(--color-white); }
+.site-nav__link--active::after { right: 0; }
+
+.site-header__menu-button {
+  display: none;
+  margin-left: auto;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.site-header__menu-button span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  border-radius: 99px;
+  background: var(--color-white);
+  transition: transform .25s ease, opacity .25s ease;
+}
+.site-header__menu-button.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.site-header__menu-button.is-open span:nth-child(2) { opacity: 0; }
+.site-header__menu-button.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

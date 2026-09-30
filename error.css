@@ -1,0 +1,41 @@
+/* =========================================================
+   PÁGINA 404
+   ---------------------------------------------------------
+   Estilos exclusivos de 404.html. A propósito NO se agrega
+   a main.css: así ninguna otra página se ve afectada.
+   Reutiliza las variables de color definidas en 00-base.css.
+   ========================================================= */
+.error-page {
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.error-page__code {
+  margin: 0 0 .5rem;
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.error-page__title {
+  margin: 0 0 .75rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.error-page__text {
+  max-width: 42ch;
+  margin: 0 auto 2rem;
+  color: var(--color-muted);
+}
+
+.error-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+}

@@ -1,0 +1,65 @@
+/* =========================================================
+   AUTOSALE MOTORS · RESPONSIVE
+   Aquí se ajusta el sitio para tablet y móvil.
+   ========================================================= */
+@media (max-width: 1000px) {
+  .site-nav { gap: 16px; }
+  .site-nav__link { font-size: 12px; }
+  .hero__grid,
+  .detail-grid,
+  .two-col { grid-template-columns: 1fr; }
+  .hero__visual { max-width: 720px; }
+  .vehicle-grid { grid-template-columns: repeat(2,1fr); }
+  .info-grid,
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .catalog-tools { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .site-nav { display: none; }
+  .site-nav--open {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px 22px;
+    border-bottom: 1px solid #252d38;
+    background: rgba(7,9,13,.98);
+    box-shadow: 0 18px 35px rgba(0,0,0,.3);
+  }
+  .site-header__menu-button { display: block; }
+  .site-header__contact { display: none; }
+  .brand__image { width: 132px; }
+  .hero { padding: 58px 0 68px; }
+  .hero__title { font-size: 42px; }
+  .hero__text { font-size: 16px; }
+  .brands__inner { padding-top: 15px; }
+  .brand-item { flex-basis: 150px; height: 68px; }
+  .section { padding: 70px 0; }
+  .section-head { display: block; }
+  .section-head__text { margin-top: 14px; }
+  .permuta { display: block; }
+  .permuta .button { margin-top: 17px; }
+  .site-footer__inner { flex-direction: column; align-items: flex-start; }
+  .detail { padding-top: 35px; }
+}
+
+@media (max-width: 600px) {
+  .u-container { width: min(calc(100% - 28px), var(--container-max)); }
+  .hero__title { font-size: 39px; }
+  .hero__actions .button { width: 100%; }
+  .vehicle-grid,
+  .info-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+  .section-head__title,
+  .two-col__title { font-size: 34px; }
+  .brand-carousel::before,
+  .brand-carousel::after { width: 38px; }
+  .brand-item { flex-basis: 138px; }
+  .vehicle-card__actions { flex-wrap: wrap; }
+  .detail-copy__title { font-size: 38px; }
+  .detail-specs-grid { grid-template-columns: 1fr; }
+  .detail-thumbs { grid-template-columns: repeat(4,1fr); }
+}

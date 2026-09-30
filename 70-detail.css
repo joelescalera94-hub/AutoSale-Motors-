@@ -1,0 +1,34 @@
+/* =========================================================
+   AUTOSALE MOTORS · FICHA INDIVIDUAL
+   Bloques BEM: .detail, .detail-gallery, .detail-copy.
+   ========================================================= */
+.detail { min-height: calc(100vh - 78px); padding: 55px 0 90px; background: var(--color-bg); }
+.back-link { display: inline-flex; margin-bottom: 28px; color: #b4bdc9; font-weight: 800; transition: color var(--transition-fast); }
+.back-link:hover { color: var(--color-white); }
+.detail-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; }
+.detail-main-image { overflow: hidden; border: 1px solid #27303b; border-radius: 22px; background: #0d1218; box-shadow: var(--shadow); }
+.detail-main-image__image { width: 100%; aspect-ratio: 1.25; object-fit: cover; transition: transform .6s ease; }
+.detail-main-image:hover .detail-main-image__image { transform: scale(1.02); }
+.detail-gallery__note,
+.detail-note { color: #707b89; font-size: 12px; }
+.detail-thumbs { display: grid; grid-template-columns: repeat(5,1fr); gap: 8px; margin-top: 12px; }
+.detail-thumb { overflow: hidden; padding: 0; border: 1px solid #27303b; border-radius: 10px; background: #0d1218; cursor: pointer; aspect-ratio: 1.35; }
+.detail-thumb__image { width: 100%; height: 100%; object-fit: cover; opacity: .72; transition: opacity .2s ease,transform .2s ease; }
+.detail-thumb:hover .detail-thumb__image,
+.detail-thumb--active .detail-thumb__image { opacity: 1; transform: scale(1.03); }
+.detail-video { overflow: hidden; margin-top: 16px; border: 1px solid #27303b; border-radius: 16px; background: #0d1218; }
+.detail-video__player { display: block; width: 100%; aspect-ratio: 16/9; }
+.detail-copy__title { margin: 0; font-size: clamp(38px,5vw,60px); letter-spacing: -.05em; }
+.detail-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+.detail-tag { padding: 4px 8px; border: 1px solid #2a3440; border-radius: 999px; color: #aeb7c4; background: #1a212b; font-size: 10px; font-weight: 850; }
+.spec-box,
+.detail-support { margin-top: 24px; padding: 20px; border: 1px solid #27303b; border-radius: 16px; background: #10161e; }
+.spec-box__title,
+.detail-support__title { margin-top: 0; color: var(--color-white); font-size: 19px; }
+.detail-specs-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 14px; }
+.detail-spec-chip { padding: 12px; border: 1px solid #27303b; border-radius: 12px; background: #0d1218; }
+.detail-spec-chip__label { display: block; margin-bottom: 4px; color: #727d8b; font-size: 11px; }
+.detail-spec-chip__value { color: #eef2f5; font-size: 14px; }
+.detail-support { background: linear-gradient(145deg,#111820,#0d1218); }
+.detail-support__list { padding-left: 18px; color: #a4adba; }
+.detail-support__note { color: #707b89; font-size: 12px; }

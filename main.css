@@ -1,0 +1,28 @@
+/*
+ * AUTOSALE MOTORS · HOJA DE ESTILOS PRINCIPAL
+ * ---------------------------------------------------------
+ * Este archivo solo organiza los módulos CSS. Para modificar:
+ * - colores/globales: 00-base.css
+ * - menú/header: 10-header.css
+ * - botones: 20-buttons.css
+ * - portada: 30-hero.css
+ * - carrusel de marcas: 40-brands.css
+ * - secciones informativas: 50-sections.css
+ * - catálogo/tarjetas: 60-catalog.css
+ * - ficha individual: 70-detail.css
+ * - utilidades/animaciones: 80-utilities.css
+ * - móvil/tablet: 90-responsive.css
+ *
+ * Se mantienen imports para que quien prefiera enlazar solo main.css
+ * siga teniendo todo el sitio disponible.
+ */
+@import url("00-base.css");
+@import url("10-header.css");
+@import url("20-buttons.css");
+@import url("30-hero.css");
+@import url("40-brands.css");
+@import url("50-sections.css");
+@import url("60-catalog.css");
+@import url("70-detail.css");
+@import url("80-utilities.css");
+@import url("90-responsive.css");
